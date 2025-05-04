@@ -1,3 +1,147 @@
 ---
 ---
 @use "main";
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0f2f1, #ffffff);
+  color: #2f3e46;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+h1 {
+  font-size: 2.8em;
+  color: #00695c;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #00bfa5;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+/* Description */
+p {
+  font-size: 1.2em;
+  color: #455a64;
+  line-height: 1.8;
+  background: #e0f2f1;
+  padding: 20px;
+  border-left: 6px solid #00bfa5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 150, 136, 0.1);
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #26a69a, #00796b);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(38, 166, 154, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #00796b, #004d40);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 121, 107, 0.4);
+}
+
+    /* FRIENDS PAGE STYLES */
+/* Untuk markdown ol dan a */
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ol > li {
+    background: #e0f2f1;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-left: 5px solid #009688;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  ol > li:hover {
+    background-color: #b2dfdb;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 121, 107, 0.2);
+  }
+  
+  ol > li a {
+    text-decoration: none;
+    color: #004d40;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+  
+  ol > li a:hover {
+    text-decoration: underline;
+    color: #00695c;
+  }
+
+ /* BLOG PAGE STYLES */
+
+/* Container for the blog page */
+ul {
+    max-width: 700px; /* Lebar konten dibatasi */
+    margin: 40px auto; /* Menempatkan konten di tengah halaman */
+    padding: 0;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Individual blog post items */
+  ul li {
+    background-color: #ffffff; /* Warna putih bersih */
+    border-radius: 8px; /* Sudut yang lebih halus */
+    padding: 15px; /* Padding lebih kecil */
+    margin-bottom: 15px; /* Jarak antar artikel */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Shadow halus untuk efek ringan */
+  }
+  
+  /* Styling for blog post links */
+  ul li a {
+    font-size: 1.4em; /* Ukuran font lebih kecil untuk menjaga kesederhanaan */
+    color: #333333; /* Warna teks abu-abu gelap */
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px; /* Spasi di antara judul dan deskripsi */
+  }
+  
+  /* Hover effect for links */
+  ul li a:hover {
+    color: #00796b; /* Warna hijau saat hover */
+    text-decoration: underline;
+  }
+  
+  /* Styling for the post date */
+  ul li p {
+    font-size: 0.9em; /* Ukuran font lebih kecil untuk tanggal */
+    color: #777777; /* Warna lebih terang untuk tanggal */
+    margin: 5px 0;
+  }
+  
